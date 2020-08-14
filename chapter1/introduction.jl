@@ -146,17 +146,17 @@ f(2, 3)
 
 f(1, 1)
 
-## The following sample does not work in Julia VSCode
-## Julia says nn is not defined
-## Maybe Jula VSCode's problem
-# odds = Array{Int64}(undef, 0)
-# nn = 1
-# while nn <= 10
-#    if isodd(nn)
-#        append!(odds, nn)
-#    end
-#    nn = nn + 1
-# end
+##
+odds = Array{Int64}(undef, 0)
+nn = 1
+while nn <= 10
+    # this is how global is used. Thanks @markkitti
+    global nn
+    if isodd(nn)
+        append!(odds, nn)
+    end
+    nn = nn + 1
+end
 
 # Random numbers
 
@@ -218,3 +218,13 @@ montecarlo_pi(10000)
 
 # 3.142
 montecarlo_pi(100000)
+
+##
+odds = Array{Int64}(undef, 0)
+nn = 1
+while nn <= 10
+    if isodd(nn)
+        append!(odds, nn)
+    end
+    nn = nn + 1
+end
