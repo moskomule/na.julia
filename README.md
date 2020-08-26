@@ -1,5 +1,5 @@
-# na.julia
+# Learning something with Julia
 
-Read [Numerical Analysis with Julia](http://fsu.digital.flvc.org/islandora/object/fsu%3A657877)
+## NumericalAnalysis
 
-For coding, I am using [VSCode extention](https://www.julia-vscode.org/) and Jupyter Notebook.
+[Numerical Analysis with Julia](http://fsu.digital.flvc.org/islandora/object/fsu%3A657877).
